@@ -15,3 +15,11 @@ wheels/
 *.png
 *.jpeg
 *.webp
+
+ai_env/
+.venv/
+train_data/
+my_personal_photos/
+*.h5
+__pycache__/
+.DS_Store
