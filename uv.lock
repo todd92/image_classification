@@ -1,0 +1,33 @@
+version = 1
+revision = 3
+requires-python = ">=3.10"
+
+[[package]]
+name = "bing-image-downloader"
+version = "1.1.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/11/a5/2151c13f10a365617bceba904e7ae27a352dd847fe1a4d3d02b2e7d94736/bing_image_downloader-1.1.2.tar.gz", hash = "sha256:bdc207ae5b036869ab42ca9d95d8f4b515c1e47e3ae0108b83a407e85eb36f7d", size = 4931, upload-time = "2022-02-10T05:39:05.733Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/24/bf/105be56c70c4141a3d42dbb9cdd30dfbd3bb3fc135879fda21d1bfa1eb51/bing_image_downloader-1.1.2-py3-none-any.whl", hash = "sha256:3b912f81d3bea1861a395fe2a6111f6d14654085abc3dc7467fbb57fd040f676", size = 5862, upload-time = "2022-02-10T05:39:04.064Z" },
+]
+
+[[package]]
+name = "downloader"
+version = "0.98"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/4e/ee/78bff07448dbf9fd03e45f3ec40ab09a4e0f1827508124b98f3c83d49af4/downloader-0.98.tar.gz", hash = "sha256:b094e8ed589d7a24b0eeab9e6c1e2638446d82a118fd62cb0c67cccf99a437a9", size = 6933, upload-time = "2016-07-20T17:05:10.988Z" }
+
+[[package]]
+name = "image-classification"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "bing-image-downloader" },
+    { name = "downloader" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "bing-image-downloader", specifier = ">=1.1.2" },
+    { name = "downloader", specifier = ">=0.98" },
+]
